@@ -56,7 +56,7 @@ class FormLeads {
     {
        $token = $data->get_param( 'token' ) ? : "";
        
-       if($token != DREAMONE_API_TOKEN){
+       if($token != ROGER_API_TOKEN)
          $error =array ( 'codigo' => '001', 'mensagem' => 'Acesso negado!');
          wp_send_json_error( $error );
        }
@@ -152,7 +152,7 @@ class FormLeads {
        $token = $data->get_param( 'token' ) ? : "";
        $qtd = $data->get_param( 'qtd' ) ? : 25;
        
-       if($token != DREAMONE_API_TOKEN){
+       if($token != ROGER_API_TOKEN){
          $error =array ( 'codigo' => '001', 'mensagem' => 'Acesso negado!');
          wp_send_json_error( $error );
        }
@@ -246,7 +246,7 @@ class FormLeads {
        $token = $data->get_param( 'token' ) ? : "";
        $qtd = $data->get_param( 'qtd' ) ? : 25;
        
-       if($token != DREAMONE_API_TOKEN){
+       if($token != ROGER_API_TOKEN){
          $error =array ( 'codigo' => '001', 'mensagem' => 'Acesso negado!');
          wp_send_json_error( $error );
        }
